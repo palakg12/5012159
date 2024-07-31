@@ -5,8 +5,8 @@ Array Representation in Memory:
 - Arrays are contiguous blocks of memory, which means all elements are stored in consecutive memory locations.
 - This allows for constant time O(1) access to elements using an index, which is computed using the formula: `address = base_address + (index * size_of_element)`.
 - Advantages of Arrays:
-  - Constant Time Access:** Direct access to any element via index provides O(1) time complexity.
-  - Efficient Memory Utilization:** No extra memory overhead like pointers (unlike linked lists).
+  - Constant Time Access: Direct access to any element via index provides O(1) time complexity.
+  - Efficient Memory Utilization: No extra memory overhead like pointers (unlike linked lists).
 
 4. Analysis
 Time Complexity:
