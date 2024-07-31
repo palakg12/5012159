@@ -1,0 +1,38 @@
+Exercise 7: Financial Forecasting
+
+1. Understanding Recursive Algorithms
+
+Concept of Recursion:
+- Definition: Recursion is a technique in programming where a function calls itself in order to solve smaller instances of the same problem. This can simplify complex problems by breaking them down into simpler sub-problems.
+- Base Case: A recursive function must have a base case to terminate the recursion. This is the simplest instance of the problem that can be solved directly.
+- Recursive Case: The part of the function that reduces the problem into smaller sub-problems and calls itself.
+
+Advantages:
+- Simplifies the problem-solving process by dividing the problem into similar sub-problems.
+- Can be more intuitive for problems that have a natural recursive structure.
+
+Disadvantages:
+- May lead to excessive computation and stack overflow if not managed properly.
+- Often less efficient than iterative solutions for certain problems due to overhead from function calls.
+
+2. Setup
+
+We'll create a method to forecast future values using a recursive approach. The future value is predicted based on an initial value and a growth rate over a number of periods.
+
+Future Value Calculation:
+The future value \( F(n) \) can be recursively defined as:
+
+\[ F(n) = F(n-1) \times (1 + \text{growthRate}) \]
+
+where \( F(n-1) \) is the future value at period \( n-1 \) and `growthRate` is the rate of growth per period.
+
+
+4. Analysis
+
+Time Complexity:
+- Recursive Approach: The time complexity of the recursive solution is \( O(n) \), where \( n \) is the number of periods. This is because the function makes \( n \) recursive calls, each reducing the number of periods by 1.
+
+Optimization:
+- Memoization: To avoid excessive computation, you can use memoization to store intermediate results and avoid redundant calculations. This technique is particularly useful when the function is called with overlapping sub-problems.
+- Iterative Approach: For large numbers of periods, an iterative approach may be more efficient as it avoids the overhead of recursive function calls and stack space.
+

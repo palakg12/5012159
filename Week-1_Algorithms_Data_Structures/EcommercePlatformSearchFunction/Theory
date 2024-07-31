@@ -1,0 +1,27 @@
+Exercise 2: E-commerce Platform Search Function
+
+1. Understand Asymptotic Notation
+Big O Notation:
+Big O notation is a mathematical notation used to describe the upper bound of the time or space complexity of an algorithm in terms of the size of the input. It characterizes the worst-case growth rate of an algorithm, allowing us to understand how the execution time or space requirements increase as the input size grows. The notation helps in comparing the efficiency of different algorithms regardless of hardware or other practical considerations.
+Best, Average, and Worst-Case Scenarios for Search Operations:**
+-Best Case: The scenario where the algorithm performs the minimum number of operations. For search operations, this usually happens when the target element is found at the first position in the data structure.
+-Average Case: Represents the expected number of operations an algorithm will take, assuming all inputs are equally likely. It provides a realistic measure of an algorithm's performance in practice.
+-Worst Case: The scenario where the algorithm performs the maximum number of operations. In search algorithms, this often occurs when the target element is at the last position or is not present in the data set at all.
+
+
+4. Analysis
+Time Complexity Analysis:
+
+- Linear Search:
+  - Best Case: O(1) - The item is found at the first position.
+  - Average Case: O(n/2) or O(n) - The item is found somewhere in the middle.
+  - Worst Case: O(n) - The item is at the last position or not present.
+
+- Binary Search:
+  - Best Case: O(1) - The item is found at the middle index initially.
+  - Average Case: O(log n) - The item is found after several splits of the array.
+  - Worst Case: O(log n) - The item is not present or at one of the ends.
+
+Which Algorithm is More Suitable:
+Binary search is generally more suitable for large datasets, provided the data is sorted. It significantly reduces the number of comparisons, making it more efficient than linear search, especially for large datasets.
+However, binary search requires the data to be sorted, which may not always be practical if the data changes frequently. In such cases, maintaining a sorted dataset can incur additional overhead. In practice, e-commerce platforms often use more sophisticated data structures like hash tables, indexes, or search trees that can offer efficient search operations without the need to sort data explicitly each time a search is performed.

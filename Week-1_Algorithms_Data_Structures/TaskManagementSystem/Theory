@@ -1,0 +1,33 @@
+Exercise 5: Task Management System
+
+1. Understanding Linked Lists
+
+Linked Lists:
+- Linked lists consist of nodes, where each node contains data and a reference (or link) to the next node in the sequence. They do not use contiguous memory locations.
+- Types of Linked Lists:
+  - Singly Linked List: Each node has a single reference to the next node. It allows traversal in only one direction.
+  - Doubly Linked List: Each node has two references: one to the next node and another to the previous node. It allows traversal in both directions.
+
+4. Analysis
+Time Complexity:
+1. Add Task:
+   - Time Complexity: O(n)
+   - To add a task, the list needs to be traversed to the end.
+2. Search Task by ID:
+   - Time Complexity: O(n)
+   - In the worst case, the task may be at the end or not present, requiring a full traversal.
+3. Traverse Tasks:
+   - Time Complexity: O(n)
+   - All tasks need to be accessed and processed.
+4. Delete Task by ID:
+   - Time Complexity: O(n)
+   - Similar to search, deletion requires finding the task first, and then adjusting the links.
+
+Advantages of Linked Lists over Arrays for Dynamic Data:
+- Dynamic Size: Linked lists can grow and shrink dynamically as elements are added or removed, unlike arrays which have a fixed size.
+- Efficient Insertions/Deletions: Inserting or deleting an element in a linked list (especially at the beginning or end) is efficient, O(1) if the position is known, compared to O(n) in arrays where elements may need to be shifted.
+- Memory Utilization: Linked lists can be more memory-efficient than arrays if the number of elements changes frequently, as they do not require a contiguous block of memory.
+
+Limitations of Linked Lists:
+- Access Time: Linked lists have O(n) access time as they do not support direct indexing like arrays.
+- Memory Overhead: Linked lists require extra memory for storing pointers/reference to the next (and previous in doubly linked lists) node.

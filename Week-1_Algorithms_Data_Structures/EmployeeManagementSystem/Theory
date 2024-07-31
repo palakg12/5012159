@@ -1,0 +1,32 @@
+Exercise 4: Employee Management System
+
+1. Understanding Array Representation
+Array Representation in Memory:
+- Arrays are contiguous blocks of memory, which means all elements are stored in consecutive memory locations.
+- This allows for constant time O(1) access to elements using an index, which is computed using the formula: `address = base_address + (index * size_of_element)`.
+- Advantages of Arrays:
+  - Constant Time Access:** Direct access to any element via index provides O(1) time complexity.
+  - Efficient Memory Utilization:** No extra memory overhead like pointers (unlike linked lists).
+
+4. Analysis
+Time Complexity:
+1. Add Employee:
+   - Time Complexity: O(1) (if there is space in the array)
+   - This operation simply adds an employee at the next available index.
+2. Search Employee by ID:
+   - Time Complexity: O(n)
+   - In the worst case, the employee might be the last one in the array or not present at all, requiring a full scan.
+3. Traverse Employees:
+   - Time Complexity: O(n)
+   - Each employee record is printed or processed.
+4. Delete Employee by ID:
+   - Time Complexity: O(n)
+   - After finding the employee, all subsequent elements must be shifted left to fill the gap.
+Limitations of Arrays and When to Use Them:
+- Fixed Size:Arrays have a fixed size defined at the time of creation. This means they cannot grow or shrink dynamically, which can lead to wasted memory or insufficient capacity.
+- Insertions and Deletions:While accessing elements is fast (O(1)), inserting and deleting elements (except at the end) can be costly (O(n)) because it may involve shifting elements.
+- Use Cases:Arrays are ideal when:
+  - The number of elements is known and fixed.
+  - Fast random access is required.
+  - Memory allocation needs to be contiguous.
+For dynamic data sizes or frequent insertions/deletions, data structures like ArrayLists (dynamic arrays), LinkedLists, or more complex data structures like hash tables and trees are often preferred.
